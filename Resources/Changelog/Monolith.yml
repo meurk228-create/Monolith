@@ -17666,3 +17666,10 @@ Entries:
   id: 1947
   time: '2026-03-02T21:18:37.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3330
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Scythe rebuffed somewhat
+  id: 1948
+  time: '2026-03-02T21:41:44.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3333
