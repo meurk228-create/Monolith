@@ -19,4 +19,4 @@ jobs:
       run: pip install requests
 
     - name: Run optimization script
-      run: python3 Tools/_Forge/advanced_publish/calculate_publish_settings.py --files-dir release --server-url "https://cdn.corvaxforge.ru/"
+      run: python3 Tools/_Forge/advanced_publish/calculate_optimal_settings.py --files-dir release --server-url "https://cdn.corvaxforge.ru/"
