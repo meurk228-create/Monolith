@@ -17943,3 +17943,14 @@ Entries:
   id: 1977
   time: '2026-03-06T12:18:42.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3373
+- author: NazrinNya
+  changes:
+    - type: Add
+      message: Added new reagent - Peranol, mostly designed for hydrakin use.
+    - type: Tweak
+      message: Hydrakin passive heat has been nerfed. 5500J -> 3900J
+    - type: Tweak
+      message: Hydrakin guidebook entry is now actually readable.
+  id: 1978
+  time: '2026-03-06T13:42:51.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3377
