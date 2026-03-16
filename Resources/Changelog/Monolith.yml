@@ -18283,3 +18283,12 @@ Entries:
   id: 2017
   time: '2026-03-15T19:36:04.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3436
+- author: Mrrpip
+  changes:
+    - type: Add
+      message: Adds a Heavy Ammo Case to Mercenary Techfabs.
+    - type: Tweak
+      message: Allows Weapon, Ammo and Explosive cases to scoop items off of the floor.
+  id: 2018
+  time: '2026-03-16T13:45:26.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3455
