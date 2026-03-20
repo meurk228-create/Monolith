@@ -92,3 +92,4 @@ surgery-popup-step-SurgeryStepInsertPlasmaVessel = { $user } вставляет 
 surgery-popup-step-SurgeryStepInsertEggSack = { $user } вставляет яйцевой мешок в { $part } { $target }!
 surgery-popup-step-SurgeryStepXenoTakeSample = { $user } аккуратно удаляет кусочек { $part } { $target }.
 surgery-popup-step-SurgeryStepGraftXenoSample = { $user } прививает ксеноткань к { $part } { $target }!
+surgery-popup-step-SurgeryStepRemoveCorticalBorer = { $user } удаляет кортикальный борер из { $part } у { $target }!
