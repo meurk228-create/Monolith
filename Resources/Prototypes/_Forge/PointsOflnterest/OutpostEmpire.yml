@@ -41,7 +41,7 @@
             Praetorian: [ 2, 2]
             Neophyte: [ -1, -1]
         - type: StationDeadDropReporting
-          messageSet: null
+          messageSet: Pirate
         - type: StationDeadDropHintExempt
         - type: TradeCrateWildcardDestination
           valueMultiplier: 1.0 # Mono
