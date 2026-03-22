@@ -10,7 +10,7 @@
 - type: pointOfInterest
   id: Mining
   parent: [BasePOI, BaseRepairablePOI]
-  name: 'Derelict Drillsite'
+  name: 'Заброшенная буровая'
   minimumDistance: 3500
   maximumDistance: 7500
   spawnGroup: Required
@@ -21,7 +21,7 @@
 
 - type: gameMap
   id: Mining
-  mapName: 'Derelict Drillsite'
+  mapName: 'Заброшенная буровая'
   mapPath: /Maps/_Mono/POI/derelictdrillsite.yml
   minPlayers: 0
   stations:
@@ -29,6 +29,6 @@
       stationProto: RecordsFrontierOutpost
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Derelict Drillsite'
+          mapNameTemplate: 'Заброшенная буровая'
         - type: StationDeadDrop
           maxDeadDrops: 6
