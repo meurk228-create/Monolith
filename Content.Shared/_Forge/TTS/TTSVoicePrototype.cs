@@ -12,23 +12,23 @@ namespace Content.Shared._Forge.TTS;
 public sealed partial class TTSVoicePrototype : IPrototype
 {
     [IdDataField]
-    public string ID { get; private set; } = default!;
+    public string ID { get; set; } = default!;
 
     [DataField("name")]
-    public string Name { get; private set; } = string.Empty;
+    public string Name { get; set; } = string.Empty;
 
     [DataField("sex", required: true)]
-    public Sex Sex { get; private set; } = default!;
+    public Sex Sex { get; set; } = default!;
 
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("speaker", required: true)]
-    public string Speaker { get; private set; } = string.Empty;
+    public string Speaker { get; set; } = string.Empty;
 
     /// <summary>
     /// Whether the species is available "at round start" (In the character editor)
     /// </summary>
     [DataField("roundStart")]
-    public bool RoundStart { get; private set; } = true;
+    public bool RoundStart { get; set; } = true;
 
     [DataField("sponsorLvL")]
     public SponsorLevel SponsorLevel = SponsorLevel.None;
