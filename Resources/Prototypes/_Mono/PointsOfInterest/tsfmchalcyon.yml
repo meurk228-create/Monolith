@@ -28,7 +28,7 @@
 
 - type: gameMap
   id: TSFMCHalcyon
-  mapName: 'Флагман ДСБФ «Халкион»'
+  mapName: 'Флагман ТСФ «Халкион»'
   mapPath: /Maps/_Mono/POI/tsfmchalcyon.yml
   minPlayers: 0
   randomRotation: false
@@ -37,10 +37,10 @@
       stationProto: SecurityFrontierOutpost
       gridComponents:
       - type: VesselInfo
-        description: "Законсервированный линкор, переделанный в передовую базу, — штаб операций ДСБФ."
+        description: "Законсервированный линкор, переделанный в передовую базу, — штаб операций ТСФ."
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Флагман ДСБФ «Халкион»'
+          mapNameTemplate: 'Флагман ТСФ «Халкион»'
         - type: ExtraStationInformation
           icon:
             sprite: _NF/Structures/Decoration/banner.rsi
