@@ -6,8 +6,12 @@ using Content.Shared.Inventory;
 using Content.Shared.PDA;
 using Content.Shared.Roles;
 using Content.Shared.Roles.Jobs;
+using Content.Server.Database; // Forge-Change: company whitelist
+using System.Threading.Tasks; // Forge-Change: company whitelist
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
+using Robust.Server.Audio; // Forge-change: spawnSound
+using Robust.Shared.Audio; // Forge-change: spawnSound
 
 namespace Content.Server._Mono.Company;
 
@@ -22,6 +26,8 @@ public sealed class CompanySystem : EntitySystem
     [Dependency] private readonly SharedJobSystem _job = default!;
     [Dependency] private readonly SharedIdCardSystem _idCardSystem = default!;
     [Dependency] private readonly InventorySystem _inventorySystem = default!;
+    [Dependency] private readonly AudioSystem _audio = default!; // Forge-change: SpawnSound
+    [Dependency] private readonly IServerDbManager _db = default!; // Forge-Change: company whitelist
 
 
     // Dictionary to store original company preferences for players
@@ -44,7 +50,7 @@ public sealed class CompanySystem : EntitySystem
         _playerOriginalCompanies.Remove(args.Player.UserId.ToString());
     }
 
-    private void OnPlayerSpawnComplete(PlayerSpawnCompleteEvent args)
+    private async void OnPlayerSpawnComplete(PlayerSpawnCompleteEvent args) // Forge-Change: company whitelist
     {
         // Add the company component with the player's saved company
         var companyComp = EnsureComp<CompanyComponent>(args.Mob);
@@ -77,7 +83,7 @@ public sealed class CompanySystem : EntitySystem
                 // Check for company login whitelists
                 foreach (var companyProto in _prototypeManager.EnumeratePrototypes<CompanyPrototype>())
                 {
-                    if (companyProto.Logins.Contains(args.Player.Name))
+                    if (await IsCompanyWhitelisted(args.Player, companyProto)) // Forge-Change: company whitelist
                     {
                         companyComp.CompanyName = companyProto.ID;
                         loginFound = true;
@@ -93,10 +99,34 @@ public sealed class CompanySystem : EntitySystem
                 if (string.IsNullOrEmpty(profileCompany))
                     profileCompany = "None";
 
+                // Forge-Change-start: company whitelist
+                // Make sure players cannot force-select a restricted company via edited profile packet.
+                if (_prototypeManager.TryIndex<CompanyPrototype>(profileCompany, out var profileCompanyProto)
+                    && !await IsCompanySelectable(args.Player, profileCompanyProto))
+                {
+                    profileCompany = "None";
+                }
+                // Forge-Change-end: company whitelist
                 // Restore the player's original company preference
                 companyComp.CompanyName = profileCompany;
             }
         }
+
+        // Forge-change-start
+        if (_prototypeManager.TryIndex<CompanyPrototype>(companyComp.CompanyName, out var proto))
+        {
+            if (proto.SpawnSound != null)
+            {
+                var audioParams = AudioParams.Default.WithVolume(-5f);
+                _audio.PlayPvs(proto.SpawnSound, args.Mob, audioParams);
+            }
+
+            foreach (var special in proto.Special)
+            {
+                special.AfterEquip(args.Mob);
+            }
+        }
+        // Forge-change-end
 
         // Ensure the component is networked to clients
         Dirty(args.Mob, companyComp);
@@ -104,6 +134,24 @@ public sealed class CompanySystem : EntitySystem
         // Update the player's ID card with the company information
         UpdateIdCardCompany(args.Mob, companyComp.CompanyName);
     }
+
+    // Forge-Change-start: company whitelist
+    private async Task<bool> IsCompanySelectable(ICommonSession session, CompanyPrototype company)
+    {
+        if (!company.Disabled)
+            return true;
+
+        return await IsCompanyWhitelisted(session, company);
+    }
+
+    private async Task<bool> IsCompanyWhitelisted(ICommonSession session, CompanyPrototype company)
+    {
+        if (company.Logins.Contains(session.Name))
+            return true;
+
+        return await _db.IsCompanyWhitelisted(session.UserId.UserId, company.ID);
+    }
+    // Forge-Change-end: company whitelist
 
     /// <summary>
     /// Updates the player's ID card with their company information

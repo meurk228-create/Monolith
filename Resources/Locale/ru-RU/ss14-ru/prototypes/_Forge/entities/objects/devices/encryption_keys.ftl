@@ -24,3 +24,8 @@ ent-EncryptionKeyPlantManager = ключ шифрования менеджера
     .desc = Ключ шифрования, используемый для координации инженеров.
 ent-EncryptionKeyHospital = ключ шифрования травмы тим
     .desc = Ключ шифрования, используемый для координации сотрудников TTI.
+
+ent-EncryptionKeyViperGroup = ключ шифрования Viper Group
+    .desc = Ключ шифрования, используемый для переговоров внутри компании VG.
+ent-EncryptionKeyPaycheckBratva = ключ шифрования Paycheck Bratva
+    .desc = Ключ шифрования, используемый для переговоров внутри банды Paycheck.
