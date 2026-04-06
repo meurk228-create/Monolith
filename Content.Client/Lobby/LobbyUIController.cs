@@ -1,4 +1,6 @@
 using System.Linq;
+using Content.Client._Mono.Company;
+
 // Forge-Change-delete
 // using Content.Client._Mono.MonoCoins;
 using Content.Client.Guidebook;

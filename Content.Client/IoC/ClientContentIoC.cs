@@ -65,6 +65,7 @@ namespace Content.Client.IoC
             collection.Register<PlayerRateLimitManager>();
             collection.Register<SharedPlayerRateLimitManager, PlayerRateLimitManager>();
             collection.Register<TitleWindowManager>();
+            collection.Register<CompanyManager>(); // Mono
 
             // Forge-Change: register sponsor manager on client like in Frontier1
             collection.Register<JoinQueueManager>();

@@ -37,7 +37,8 @@ using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Direction = Robust.Shared.Maths.Direction;
-using Content.Shared._EE.Contractors.Prototypes; // Forge-change: take _EE nationality
+using Content.Shared._EE.Contractors.Prototypes;
+using Content.Client._Mono.Company; // Forge-change: take _EE nationality
 
 namespace Content.Client.Lobby.UI
 {
