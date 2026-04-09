@@ -208,8 +208,8 @@
       steps: # Frontier - Sausage casing making
       - tool: Rolling # Frontier - Sausage casing making
         doAfter: 1 # Frontier - Sausage casing making
-  - node: casing # Frontier - Sausage casing making
-    entity: FoodSausageCasing # Frontier - Sausage casing making
+  # - node: casing # Frontier - Sausage casing making
+  #   entity: FoodSausageCasing # Frontier - Sausage casing making
   - node: cutlet
     entity: FoodMeatCutletCooked
 
