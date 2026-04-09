@@ -56,7 +56,7 @@
     name: ghost-role-information-crispy-name
     allowMovement: true
     description: ghost-role-information-crispy-description
-    rules: ghost-role-information-nonantagonist-rules
+    rules: ghost-role-information-Cak-rules
   - type: GhostTakeoverAvailable
   - type: OwOAccent
   - type: Speech
@@ -85,7 +85,7 @@
   - type: Appearance
   - type: DeepFried
     crispinessLevelSet: Crispy
-    originalName: Хрустик #CorvaxFrontier
+    originalName: crispy
   - type: FriedTrait
     crispinessLevelSet: Crispy
 
@@ -101,7 +101,7 @@
       - spooky
   - type: DeepFried
     crispinessLevelSet: Spectral
-    originalName: СпукиКот #CorvaxFrontier
+    originalName: spooky
   - type: FriedTrait
     crispinessLevelSet: Spectral
   - type: Spectral
