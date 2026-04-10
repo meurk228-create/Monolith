@@ -29,3 +29,4 @@ food-sequence-cotton-burger-content-plushie-corgi = corgi
 food-sequence-cotton-burger-content-plushie-cat = cat
 food-sequence-cotton-burger-content-plushie-rpg = rocket
 food-sequence-cotton-burger-content-plushie-goblin = goblin
+food-sequence-cotton-burger-content-plushie-moth = moth

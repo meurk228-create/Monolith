@@ -29,4 +29,4 @@ reagent-name-wassail = wassail
 reagent-desc-wassail = Hot mulled ale.
 
 reagent-name-the-madgob = the madgob
-reagent-desc-the-madgob = The Peaq of goblin drink mixing!
+reagent-desc-the-madgob = The peak of goblin drink mixing!

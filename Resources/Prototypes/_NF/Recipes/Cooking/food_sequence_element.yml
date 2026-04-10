@@ -40,7 +40,7 @@
 - type: foodSequenceElement
   id: Cucumber
   scale: 0.8, 0.8
-  name: food-sequence-content-ham
+  name: food-sequence-content-cucumber
   sprites:
   - sprite: _NF/Objects/Specific/Hydroponics/cucumber.rsi
     state: slice

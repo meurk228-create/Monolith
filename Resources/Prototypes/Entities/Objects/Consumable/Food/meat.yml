@@ -1237,7 +1237,7 @@
   # Frontier: Cookable meatball. Delicious.
   - type: Construction
     graph: MeatMeatballCooked
-    node: cooked
+    node: meatball cooked
   # End Frontier
 
 - type: entity
