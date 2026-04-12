@@ -19667,3 +19667,10 @@ Entries:
   id: 2170
   time: '2026-04-12T09:27:05.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3764
+- author: Ilya246
+  changes:
+    - type: Fix
+      message: You can no longer dock to grids while charging up FTL.
+  id: 2171
+  time: '2026-04-12T10:10:05.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3765
