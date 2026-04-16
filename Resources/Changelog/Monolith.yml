@@ -19934,3 +19934,10 @@ Entries:
   id: 2200
   time: '2026-04-16T15:24:17.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3803
+- author: ziz11
+  changes:
+    - type: Add
+      message: Added mode change buttons to radar interfaces.
+  id: 2201
+  time: '2026-04-16T15:55:16.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3794
