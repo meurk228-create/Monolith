@@ -19925,3 +19925,12 @@ Entries:
   id: 2199
   time: '2026-04-16T12:45:27.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3789
+- author: Redrover1760
+  changes:
+    - type: Fix
+      message: >-
+        Yowie randomized last names are no longer are an invalid character and
+        instead just don't exist
+  id: 2200
+  time: '2026-04-16T15:24:17.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3803
