@@ -20015,3 +20015,13 @@ Entries:
   id: 2209
   time: '2026-04-17T00:41:48.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3809
+- author: Ilya246
+  changes:
+    - type: Tweak
+      message: >-
+        Significantly upgraded ship AI (autopilot) behavior. Should be less
+        awkward and no longer make easily avoidable mistakes (will still make
+        unavoidable mistakes, though, so don't go going 300 on a Serkesh).
+  id: 2210
+  time: '2026-04-17T14:52:16.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3811
