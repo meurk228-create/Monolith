@@ -186,7 +186,7 @@
   - type: Storage
     maxItemSize: Huge
     grid:
-    - 0,0,19,9 # Goob->Mono
+    - 0,0,11,8  # Forge-Change # Goob->Mono 
   - type: Clothing # Frontier
     sprite: _NF/Clothing/Back/Satchels/holding.rsi # Frontier
     clothingVisuals: # Frontier
