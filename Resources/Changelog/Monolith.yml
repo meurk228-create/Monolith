@@ -20025,3 +20025,10 @@ Entries:
   id: 2210
   time: '2026-04-17T14:52:16.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3811
+- author: Corrupt142
+  changes:
+    - type: Tweak
+      message: Tweaked wyvern to be boardable!
+  id: 2211
+  time: '2026-04-17T16:56:15.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3812
