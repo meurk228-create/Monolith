@@ -20070,3 +20070,10 @@ Entries:
   id: 2213
   time: '2026-04-17T20:42:34.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3814
+- author: burrrkeye
+  changes:
+    - type: Fix
+      message: Asakim now spawn with filled oxygen tank.
+  id: 2214
+  time: '2026-04-18T14:17:50.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3818
