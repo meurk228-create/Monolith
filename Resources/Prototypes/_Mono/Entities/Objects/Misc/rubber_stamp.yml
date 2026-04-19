@@ -29,7 +29,6 @@
   - type: Sprite
     sprite: _NF/Objects/Misc/stamps.rsi
     state: stamp-psychologist
-    protected: True
   - type: Tag
     tags:
     - WinterSolsticeStamp
@@ -47,7 +46,6 @@
   - type: Sprite
     sprite: _NF/Objects/Misc/stamps.rsi
     state: stamp-doc
-    protected: True
   - type: Tag
     tags:
     - TSFColonelStamp
@@ -65,7 +63,6 @@
   - type: Sprite
     sprite: _NF/Objects/Misc/stamps.rsi
     state: stamp-sheriff
-    protected: True
   - type: Tag
     tags:
     - TSFCaptainStamp
@@ -84,7 +81,6 @@
     stampState: "paper_stamp-mono-overwatch"
   - type: Sprite
     state: stamp-qm
-    protected: True
   - type: Tag
     tags:
     - PDVOverwatchStamp
@@ -102,7 +98,6 @@
     stampState: "paper_stamp-mono-vizier"
   - type: Sprite
     state: stamp-rd
-    protected: True
   - type: Tag
     tags:
     - PDVVizierStamp
@@ -119,7 +114,6 @@
     stampState: "paper_stamp-mono-asvaran"
   - type: Sprite
     state: stamp-lawyer
-    protected: True
   - type: Tag
     tags:
     - PDVAsvaranStamp
@@ -136,7 +130,6 @@
     stampState: "paper_stamp-mono-spasaka"
   - type: Sprite
     state: stamp-wizard
-    protected: True
   - type: Tag
     tags:
     - PDVSpasakaStamp

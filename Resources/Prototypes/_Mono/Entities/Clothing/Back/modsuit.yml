@@ -159,7 +159,7 @@
     maxItemSize: Huge
   - type: ToggleableClothing
     clothingPrototypes:
-      head: ClothingModsuitHelmetMercenary
+      head: ClothingModsuitHelmetGalloglass
       gloves: ClothingModsuitGauntletsMercenary
       outerClothing: ClothingModsuitChestplateMercenary
       shoes: ClothingModsuitBootsMercenary

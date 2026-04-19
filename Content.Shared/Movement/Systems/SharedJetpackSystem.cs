@@ -37,7 +37,6 @@ public abstract class SharedJetpackSystem : EntitySystem
     private const float MinCombatPenalty = 0.02f;
     private static readonly TimeSpan CombatPenaltyDuration = TimeSpan.FromSeconds(0.65f);
     // Forge-Change-end
-    [Dependency] private readonly SharedGravitySystem _gravity = default!; // Mono
 
     public override void Initialize()
     {
