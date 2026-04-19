@@ -20147,3 +20147,10 @@ Entries:
   id: 2220
   time: '2026-04-19T23:32:21.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3822
+- author: Redrover1760
+  changes:
+    - type: Add
+      message: Readds asakim handheld radio to asakim loadouts
+  id: 2221
+  time: '2026-04-19T23:54:58.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3841
